@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container mt-5 d-flex justify-content-center align-items-center">
+     <!--Linha flexível-->
+    <div class="row bg-info bg-opacity-10 border border-info rounded text-white">
+        <!-- Coluna da imagem -->
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <img src="{{ profile.image }}" alt="{{ profile.name }}" class="img-fluid rounded"/>
+        </div>
+        <!-- Coluna do texto -->
+        <div class="col-md-8  p-3 h5 text-start">
+            <h1>{{ profile.name }}</h1>
+            <p><b>Status:</b> {{ profile.status }}</p>
+            <p><b>Species:</b> {{ profile.species }}</p>
+            <p><b>Gender:</b> {{ profile.gender }}</p>
+            <p><b>Last known location:</b> {{ profile.location.name }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
