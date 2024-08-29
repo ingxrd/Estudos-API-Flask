@@ -26,3 +26,8 @@ Este repositório contém um projeto de aplicação web desenvolvida com Flask, 
 - **Listagem de vários personagens:**
 
   ![Listagem de vários personagens](https://miro.medium.com/v2/resize:fit:720/format:webp/1*zOClxpuxGE1SGzy1zzmfcQ.png)
+  
+![Episode List](https://i.postimg.cc/VL9WXnf5/episode-list.png)
+![Episodes](https://i.postimg.cc/HkB0hm7g/episodes.png)
+![Location Lists](https://i.postimg.cc/MGH0kLyj/location-lists.png)
+![Locations](https://i.postimg.cc/CK2Gw4Nr/locations.png)
