@@ -97,18 +97,18 @@ def get_episode(id):
 
     characters = []
 
-    for characters_url in episode['characters']:
-        characters_response = urllib.request.urlopen(characters_url)
-        characters_data = characters_response.read()
-        character = json.loads(characters_data)
+    for character_url in episode['characters']:
+        character_response = urllib.request.urlopen(character_url)
+        character_data = character_response.read()
+        character = json.loads(character_data)
         characters.append({
             "id": character["id"],
+            "name": character["name"],  # Inclua o nome do personagem se for necessário
             "url": "/profile/" + str(character["id"])
         })
 
-        episode['characters'] = characters 
+    episode['characters'] = characters 
 
-    
     return render_template("episode.html", episode=episode)
 
 
