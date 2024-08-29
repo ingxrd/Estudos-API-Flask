@@ -20,14 +20,20 @@ Este repositório contém um projeto de aplicação web desenvolvida com Flask, 
 
 ## Renderização 
 - **Listagem de um personagem:**
-  
-  ![Listagem de um personagem](https://miro.medium.com/v2/resize:fit:720/format:webp/1*C21TDEXHTY1efeL4nX2v-A.png)
+![Listagem de um personagem](https://i.postimg.cc/zD7KsZsF/1.png)
 
 - **Listagem de vários personagens:**
 
-  ![Listagem de vários personagens](https://miro.medium.com/v2/resize:fit:720/format:webp/1*zOClxpuxGE1SGzy1zzmfcQ.png)
-  
+![Listagem de vários personagens](https://i.postimg.cc/W3wnhDhd/2.png)
+
+- **Listagem de um episódio:**
 ![Episode List](https://i.postimg.cc/VL9WXnf5/episode-list.png)
+
+- **Listagem de vários episódio**
 ![Episodes](https://i.postimg.cc/HkB0hm7g/episodes.png)
+
+- **Listagem de um local e seus residentes**
 ![Location Lists](https://i.postimg.cc/MGH0kLyj/location-lists.png)
+
+- **Listagem de vários locais**
 ![Locations](https://i.postimg.cc/CK2Gw4Nr/locations.png)
