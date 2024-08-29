@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container mt-5 mb-5 d-flex justify-content-center align-items-center">
+    <div class="row bg-info bg-opacity-10 border border-info rounded text-white">
+        <div class="row p-2">
+            <h2>{{ episode.name }}</h2>
+            <p><b>Air date:</b> {{ episode.air_date }}</p>
+            <p><b>Episode Number:</b> {{ episode.episode }}</p>
+            <p><b>Episode ID:</b> {{episode.id}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center text-center">
+    <table class="table table-dark ">
+        <thead>
+            <tr>
+                <th scope="col">Character ID</th>
+                <th scope="col">Character profile</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for character in episode.characters %}
+            <tr>
+                <td>{{character.id}}</td>            
+                <td><a href="{{ profile.origin.url }}" target="_blank" class="btn btn-outline-info btn-sm">View Profile</a></td></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    
+{% endblock %}
+
+

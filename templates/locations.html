@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+  {% block content %}
+        <div class="row bg-dark">
+          <h1 class="text-white mt-3 mb-5 center-item text-center">Locations 🗺</h1>
+          {% for location in locations %}
+            <div class="col-sm-3 col-6">
+                <h3 class="h5 text-white mt-3 mb-3">{{ location.name }}</h3>
+                <p>
+                  <a href="/locations/{{ location.id }}"
+                  class="btn btn-outline-info btn-sm">Read More</a>
+
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+        {% endblock %}
+    </main>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container mt-5 mb-5 d-flex justify-content-center align-items-center">
+    <div class="row bg-info bg-opacity-10 border border-info rounded text-white">
+        <div class="row p-2">
+            <h2>{{ locations.name }}</h2>
+            <p><b>Type:</b> {{ locations.type }}</p>
+            <p><b>Dimention:</b> {{ locations.dimension }}</p>
+        </div>
+    </div>
+</div>
+
+
+
+<br/>
+
+<div class="row justify-content-center text-center">
+<table class="table table-dark ">
+    <thead>
+        <tr>
+            <th scope="col">Resident ID</th>
+            <th scope="col">Resident profile</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for resident in locations.residents %}
+        <tr>
+            <td>{{resident.id}}</td>            
+            <td><a href="{{ resident.url }}" target="_blank" class="btn btn-outline-info btn-sm">View Profile</a></td></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+
+{% endblock %}
+
+
